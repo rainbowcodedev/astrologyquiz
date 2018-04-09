@@ -1,0 +1,297 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#001064"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:drawableLeft="@android:drawable/btn_star_big_on"
+                    android:drawablePadding="50dp"
+                    android:drawableRight="@android:drawable/btn_star_big_on"
+                    android:text="Astrology Quiz"
+                    android:background="#002171"
+                    android:textColor="#fff176"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@android:drawable/btn_star_big_on"
+                    android:drawablePadding="8dp"
+                    android:text="1. This sign's element is water:"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioLibra"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Libra"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/radioAquarius"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Aquarius"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/radioScorpio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Scorpio"
+                        android:textColor="#fff" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@android:drawable/btn_star_big_on"
+                    android:drawablePadding="8dp"
+                    android:text="2. Capricorn's symbol is the "
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/symbol"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:inputType="text"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@android:drawable/btn_star_big_on"
+                        android:drawablePadding="8dp"
+                        android:text="3. Taurus is: "
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(check all that apply)"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/reliable_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#fff"
+                        android:paddingLeft="10dp"
+                        android:text="reliable"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/intense_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#fff"
+                        android:paddingLeft="10dp"
+                        android:text="intense"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/stubborn_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#fff"
+                        android:paddingLeft="10dp"
+                        android:text="stubborn"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@android:drawable/btn_star_big_on"
+                    android:drawablePadding="8dp"
+                    android:text="4. This is the first sign of the zodiac:"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioLeo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Leo"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/radioVirgo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Virgo"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/radioAries"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Aries"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/radioGemini"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Gemini"
+                        android:textColor="#fff" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@android:drawable/btn_star_big_on"
+                    android:drawablePadding="8dp"
+                    android:text="5. This sign is ruled by the Moon:"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioSagittarius"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Sagittarius"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/radioCancer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Cancer"
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/radioPisces"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#fff"
+                        android:text="Pisces"
+                        android:textColor="#fff" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#ffc107"
+                android:drawableLeft="@android:drawable/btn_star_big_on"
+                android:drawablePadding="50dp"
+                android:drawableRight="@android:drawable/btn_star_big_on"
+                android:onClick="submitQuiz"
+                android:textSize="28dp"
+                android:text="Submit"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
